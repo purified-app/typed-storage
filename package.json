@@ -1,0 +1,47 @@
+{
+    "name": "@purified-app/typed-storage",
+    "version": "0.1.0",
+    "description": "A type-safe wrapper for localStorage and sessionStorage",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "default": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "localStorage",
+        "sessionStorage",
+        "TypeScript",
+        "storage",
+        "typed-storage"
+    ],
+    "author": "Benjamin Reiersolmoen",
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/purified-app/typed-storage.git"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "bugs": {
+        "url": "https://github.com/purified-app/typed-storage/issues"
+    },
+    "homepage": "https://github.com/purified-app/typed-storage#readme"
+}
